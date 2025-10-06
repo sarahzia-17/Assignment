@@ -38,7 +38,9 @@ public class hammingAlgo {
             System.out.println(s1);
             h = getHammingBit ( "ODD", s1);
             System.out.println(h);
-            int s2 = 0;
+
+            //h2
+            int s2 = 0; 
             for(int i=5; i < msgLength; i++){
                 if((i != 6) && (i != 7) && (i != 12) && (i != 14)) {
                     if(i % 4 == 1 || i % 4 == 2) s2 += msg[i];
@@ -47,15 +49,41 @@ public class hammingAlgo {
             System.out.println(s2);
             int h2 = getHammingBit(parityScheme, s2);
             System.out.println(h2);
-
+                    
+            
             int s3 = 0;
             for(int i=3; i < msgLength; i++){
                 if(i != 4 && i != 5 && i != 6 && i != 7 && i != 13){
                     if(i % 8 < 4 && i > 2) s3 += msg[i];
                 }
+            }sum=0
+
+            start=n;
+            for(int i=n; i<msg.Length; i+=(n+n)
+                {
+                k=0
+                    while (k<start)
+                    {
+                        sum+= msg(start+k);
+                        k=k+1
+
+                            }
             }
+        }
+
+ int s1 = 0;
+        int i = 3;
+        while (i < msgLength) {
+            s1 += msg[i];
+            i += 2;
+        }
+        System.out.println("s1 sum: " + s1);
+        int h1 = getHammingBit(parityScheme, s1);
+        System.out.println("h1 bit: " + h1);
+            
 
     }
+
 
 
     }
