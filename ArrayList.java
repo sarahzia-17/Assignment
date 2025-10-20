@@ -23,4 +23,13 @@ public class hammingalgoSirAL {
             System.out.println("for hamming bit-" + (n + 1) + " the sum is " + s);
         }
     }
+
 }
+
+import java.io.;
+import java.util.;
+
+public class ProductWiseSales {
+    public static void main(String []args) {
+        String filename = "EVE01Sales.txt";
+        
